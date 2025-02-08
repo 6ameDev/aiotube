@@ -24,6 +24,7 @@ SOFTWARE.
 
 
 from .errors import *
+from .find import Find
 from .video import Video
 from .query import Search
 from .extras import Extras

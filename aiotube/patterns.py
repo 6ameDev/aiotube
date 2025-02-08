@@ -59,3 +59,6 @@ class _QueryPatterns:
     channel_id = re.compile("channelId\":\"(.*?)\"")
     video_id = re.compile("videoId\":\"(.*?)\"")
     playlist_id = re.compile("playlistId\":\"(.*?)\"")
+
+class _FindPatterns:
+    videoRenderer = re.compile(r'(\{"videoRenderer":.*?)(?=,\{"videoRenderer":|\]\}\]\}\])', re.DOTALL)
